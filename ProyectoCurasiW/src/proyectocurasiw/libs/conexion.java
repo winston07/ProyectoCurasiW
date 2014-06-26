@@ -17,13 +17,13 @@ import javax.swing.JOptionPane;
  */
 public class conexion {
     private static Connection conex=null;
-    private static String url="jdbc:mysql://localhost/bd_visitas";
-    private static String usuario="root";
-    private static String clave="root";
+    private static final String url="jdbc:mysql://localhost/bd_visitas";
+    private static final String usuario="root";
+    private static final String clave="root";
     private static Object e;
     
     
-    public static Connection getConexion() throws SQLException
+    public static Connection getConexion()
     {
         try{
             Class.forName("com.mysql.jdbc.Driver");
